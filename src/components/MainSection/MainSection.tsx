@@ -4,7 +4,7 @@ import spritetester from "../../assets/spritetester.jpeg"
 import omw from "../../assets/omw.jpeg"
 import alberttransite from "../../assets/alberttransite.jpeg"
 import cortexos from "../../assets/cortexos.jpg"
-import { ReactNode, RefObject, useEffect, useRef } from 'react'
+import { ReactNode, RefObject, useEffect } from 'react'
 
 
 const Experience = [
@@ -66,7 +66,7 @@ const Projects = [
     name: "alberttran.com",
     description: "Previous iteration of this website.",
     img: alberttransite,
-    href: "https://alberttran.netlify.app/",
+    href: "https://alberttranv1.netlify.app/",
   }
 
 ]
