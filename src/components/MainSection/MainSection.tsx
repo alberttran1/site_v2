@@ -131,7 +131,7 @@ const MainSection = (props : {aboutRef: RefObject<HTMLDivElement>, experienceRef
             {subTitle &&
             <>
               <FaCircle size={6}/>
-              <div className="font-Abel text-lg">
+              <div className="font-Abel text-lg max-[640px]:text-sm">
                 {subTitle.toUpperCase()}
               </div>
             </>
@@ -206,7 +206,7 @@ const MainSection = (props : {aboutRef: RefObject<HTMLDivElement>, experienceRef
             </a>
           </div>
         </div>
-        <div className='flex flex-col gap-6 w-[30rem]'>
+        <div className='flex flex-col gap-6 w-[30rem] max-w-[100vw] px-2'>
           <div className='font-Abel whitespace-pre-line text-lg scroll-mt-[90px]' ref={aboutRef}>
             <Paragraph/>
           </div>
