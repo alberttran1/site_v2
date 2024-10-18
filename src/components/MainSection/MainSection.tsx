@@ -114,8 +114,8 @@ const MainSection = (props : {aboutRef: RefObject<HTMLDivElement>, experienceRef
     )
   }
 
-  const Card = (props : {title: string, subTitle?: string, description: string, item: ReactNode, href?: string}) => {
-    const {title, subTitle, description, href, item} = props;
+  const Card = (props : {title: string, subTitle?: string, description: string, item: ReactNode, href?: string, noShowHref?: boolean}) => {
+    const {title, subTitle, description, href, item, noShowHref} = props;
     return (
       <a target='_blank' className='group border-transparent border hover:border-black text-black hover:text-black rounded-md p-6 flex gap-6 hover:shadow transition' href={href}>
         <div className='' style={{flex:1}}>
@@ -125,18 +125,18 @@ const MainSection = (props : {aboutRef: RefObject<HTMLDivElement>, experienceRef
         </div>
         <div className='' style={{flex:3}}>
           <div className='flex gap-2 items-center'>
-            <div className="font-Bebas text-xl">
+            <div className="font-Bebas text-xl whitespace-nowrap">
               {title}
             </div>
             {subTitle &&
             <>
               <FaCircle size={6}/>
-              <div className="font-Abel text-lg max-[640px]:text-sm">
+              <div className="font-Abel text-lg whitespace-nowrap max-[640px]:text-sm">
                 {subTitle.toUpperCase()}
               </div>
             </>
             }
-            {href && 
+            {href && !noShowHref &&
             <FaExternalLinkAlt className='mb-1 ml-2 opacity-10 group-hover:opacity-100 transition-all'/>}
           </div>
           <div className='font-Abel'>
@@ -216,7 +216,7 @@ const MainSection = (props : {aboutRef: RefObject<HTMLDivElement>, experienceRef
               Experience
             </div>
             {Experience.map((experience,index) => {
-              return <Card key={`experience_card_${index}`} title={experience.name} subTitle={experience.title} description={experience.description} item={experience.date} href={experience.href}/>
+              return <Card key={`experience_card_${index}`} title={experience.name} subTitle={experience.title} description={experience.description} item={experience.date} href={experience.href} noShowHref={true}/>
             })}
           </div>
           <Separator/>
