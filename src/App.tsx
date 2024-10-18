@@ -31,7 +31,7 @@ function App() {
             </div>
           </>
         }/>
-        <Route path="resume" element={<embed src={resume} width={"100%"} height={"100%"} />} />
+        <Route path="/resume" element={<embed src={resume} width={"100%"} height={"100%"} />} />
       </Routes>
     </BrowserRouter>
 
