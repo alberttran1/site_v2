@@ -25,7 +25,7 @@ const Experience = [
   {
     name: "Halp",
     title: "Full-Stack Engineer",
-    description: "Core team member in the inception of the Kortex note taking application. Led core feature development under tight release deadlines to a successful launch to 20k+ users.",
+    description: "Released features end to end, implementing unit and integration testing to strengthen scalability with 92% code coverage.",
     date: "SEP-DEC 2022",
     href: "https://www.halp.co/"
   },
