@@ -1,9 +1,11 @@
 import { FaCircle, FaExternalLinkAlt, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa'
-import ME from '../../assets/ME2.jpeg'
+import ME from '../../assets/ME4.jpeg'
 import spritetester from "../../assets/spritetester.jpeg"
 import omw from "../../assets/omw.jpeg"
 import alberttransite from "../../assets/alberttransite.jpeg"
 import cortexos from "../../assets/cortexos.jpg"
+import tripjournal from "../../assets/tripJournal.jpeg"
+
 import { ReactNode, RefObject, useEffect } from 'react'
 
 
@@ -47,15 +49,22 @@ const Experience = [
 
 const Projects = [
   {
+    name: "OMW!",
+    description: "Social media application for users to see where their friends are and what fun events are happening near them!",
+    img: omw,
+    href: "https://getomw.app/",
+  },
+  {
+    name: "Trip Journal",
+    description: "A web application for journaling and sharing my trips! Hooked up to Firebase Auth, and Cloudinary image upload.",
+    img: tripjournal,
+    href: "https://tripjournall.netlify.app/",
+  },
+  {
     name: "Sprite Tester",
     description: "Web application for uploading and testing 2-D animated sprites! Save sprite animation sequences and control them to see how they run, walk, and jump!",
     img: spritetester,
     href: "https://spritetester.netlify.app/",
-  },
-  {
-    name: "OMW!",
-    description: "Social media application for users to see where their friends are and what fun events are happening near them!",
-    img: omw,
   },
   {
     name: "Cortex-OS",
@@ -152,8 +161,8 @@ const MainSection = (props : {aboutRef: RefObject<HTMLDivElement>, experienceRef
       <>
         {"Hey! I'm Albert and I'm a Software Engineer. I love making things\
         that look good and things that work good under the hood. So far\
-        I've used my talents to help build an "}
-        <Link  label="advertising agency site" href="https://sponsorcircle.com/"/>
+        I've used my talents to help build out an "}
+        <Link  label="advertising agency" href="https://sponsorcircle.com/"/>
         {", a "}
         <Link  label="cannabis ERP" href="https://www.canix.com/"/>
         {", an "}
@@ -184,8 +193,8 @@ const MainSection = (props : {aboutRef: RefObject<HTMLDivElement>, experienceRef
           <div className='flex flex-col min-[962px]:gap-[5rem]'>
             <div className='flex flex-col items-center gap-2'>
               <img src={ME} className='rounded-full h-60 min-w-60 object-cover border-2 border-black'/>
-              <blockquote className='border-l border-l-black pl-2 font-Abel'>
-                "Happily chasing waterfalls."
+              <blockquote className='mt-4 border-l border-l-black pl-2 font-Abel'>
+                "Do what's fun, not what's easy."
               </blockquote>
             </div>
             <div className='flex flex-col gap-5 font-Abel max-[961px]:hidden'>
