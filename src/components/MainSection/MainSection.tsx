@@ -56,7 +56,7 @@ const Projects = [
   },
   {
     name: "Trip Journal",
-    description: "A web application for journaling and sharing my trips! Hooked up to Firebase Auth, and Cloudinary image upload.",
+    description: "A web application for journaling and sharing my trips! Hooked up to Firebase auth and Cloudinary image upload.",
     img: tripjournal,
     href: "https://tripjournall.netlify.app/",
   },
