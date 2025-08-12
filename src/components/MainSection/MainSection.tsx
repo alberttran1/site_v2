@@ -5,6 +5,8 @@ import omw from "../../assets/omw.jpeg"
 import alberttransite from "../../assets/alberttransite.jpeg"
 import cortexos from "../../assets/cortexos.jpg"
 import tripjournal from "../../assets/tripJournal.jpeg"
+import urpso from "../../assets/urpso.jpeg"
+
 
 import { ReactNode, RefObject, useEffect } from 'react'
 
@@ -53,6 +55,12 @@ const Projects = [
     description: "Social media application for users to see where their friends are and what fun events are happening near them!",
     img: omw,
     href: "https://getomw.app/",
+  },
+  {
+    name: "Ultimate Rock Paper Scissors Online",
+    description: "Online ranked real-time multiplayer RPS with game modifiers and statistical data collection.",
+    img: urpso,
+    href: "https://ultimaterockpaperscissorsonline.netlify.app/",
   },
   {
     name: "Trip Journal",
